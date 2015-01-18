@@ -7,9 +7,6 @@
  */
 class Images extends CI_Model
 {
-	var $_tableName; // Model table name
-	var $_keyField;	//Primary key
-
 	//Constructor
 	function __construct()
 	{

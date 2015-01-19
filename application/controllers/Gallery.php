@@ -16,6 +16,7 @@ class Gallery extends Application
 {
 	public function index()
 	{
+		
 		//get all images from our model
 		$pix = $this->images->all();
 
@@ -36,7 +37,7 @@ class Gallery extends Application
 		//Generate the table
 		$rows = $this->table->make_columns($cells, 3);
 		$this->data['thetable'] = $this->table->generate($rows);
-
+		
 		$this->data['pagebody'] = 'gallery';
 		$this->render();
 	}
